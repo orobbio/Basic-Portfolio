@@ -4,7 +4,7 @@ body {
 	background-repeat: repeat;
 	font-family: Arial;
 	font-size: 18px;
-	color: #777;
+	color: #777777;
 	line-height: 28px;
 }
 *
@@ -27,18 +27,18 @@ h1, h2 {
 
 h1 {
 	font-size: 30px;
-	border-bottom: 2px solid #ccc;
+	border-bottom: 2px solid #cccccc;
 }
 
 h2 {
 	font-size: 22px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #cccccc;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 }
 
 header {
-	background-color: #fff;
+	background-color: #ffffff;
 	margin-bottom: 40px;
 	border-bottom: 2px solid #ccc;
 }
@@ -47,7 +47,7 @@ header {
 	float: left;
 	display: block;
 	background-color: #4aaaa5;
-	color:#fff;
+	color:#ffffff;
 	font-family: "Georgia";
 	font-size: 30px;
 	padding: 0 40px;
@@ -91,8 +91,8 @@ nav ul li:first-child a {
 
 footer {
 	text-align: center;
-	background-color: #777;
-	color: #ccc;
+	background-color: #666666;
+	color: #cccccc;
 	line-height: 90px;
 	margin-top: 40px;
 	border-top: 8px solid #4aaaa5;
@@ -100,9 +100,9 @@ footer {
 }
 
 .module {
-	background-color: #fff;
+	background-color: #ffffff;
 	padding: 30px;
-	border: 1px solid #ddd;
+	border: 1px solid #dddddd;
 }
 
 #content {
@@ -139,7 +139,7 @@ textarea {
   height: 35px;
   padding: 0 10px;
   font-size: 14px;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
 }
 
 textarea {
@@ -149,7 +149,7 @@ textarea {
 input[type=submit] {
   padding: 10px 30px;
   font-size: 18px;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
@@ -183,7 +183,7 @@ input[type=submit] {
   margin-bottom: 0;
   font-weight: 300;
   line-height: 30px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   background: #4aaaa5;
   border-bottom: 0;
