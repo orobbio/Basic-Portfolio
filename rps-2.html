@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Part 2
+    </title>
+</head>
+
+<body>
+    <h1>Rock - Paper - Scissors</h1>
+    <p>Press R P or S to start the game</p>
+    <h2>Ties: <span id="user-text"><strong>0</strong></span></h2>
+    <h2>Wins: <span id="user-text2"><strong>0</strong></span></h2>
+    <h2>Losses: <span id="user-text3"><strong>0</strong></span></h2>
+    <div id="game">
+
+    </div>
+
+    <script type="text/javascript">
+        // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+        var computerChoices = ["r", "p", "s"];
+        var wins = 0;
+        var losses = 0;
+        var ties = 0;
+        var userText = document.getElementById("user-text");
+        var userText2 = document.getElementById("user-text2");
+        var userText3 = document.getElementById("user-text3");
+
+        // This function is run whenever the user presses a key.
+        document.onkeyup = function (event) {
+
+            // Determines which key was pressed.
+            var userGuess = event.key;
+
+            // Randomly chooses a choice from the options array. This is the Computer's guess.
+            var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+            // Alerts the key the user pressed (userGuess).
+            alert("User guess: " + userGuess);
+            // Alerts the Computer's guess.
+            alert("Computer guess: " + computerGuess);
+
+            if (userGuess == "r" && computerGuess == "r") {
+                alert("You Tied");
+                var newties = ++ties;
+                userText.textContent = newties;
+            }
+            if (userGuess == "r" && computerGuess == "p") {
+                alert("You Lost");
+                var newlosses = ++losses;
+                userText3.textContent = newlosses;
+            }
+            if (userGuess == "r" && computerGuess == "s") {
+                alert("You Won");
+                var newwins = ++wins;
+                userText2.textContent = newwins;
+            }
+            if (userGuess == "p" && computerGuess == "r") {
+                alert("You Won");
+                var newwins = ++wins;
+                userText2.textContent = newwins;
+            }
+            if (userGuess == "p" && computerGuess == "p") {
+                alert("You Tied");
+                var newties = ++ties;
+                userText.textContent = newties;
+            }
+            if (userGuess == "p" && computerGuess == "s") {
+                alert("You Lost");
+                var newlosses = ++losses;
+                userText3.textContent = newlosses;
+            }
+            if (userGuess == "s" && computerGuess == "r") {
+                alert("You Lost");
+                var newlosses = ++losses;
+                userText3.textContent = newlosses;
+            }
+            if (userGuess == "s" && computerGuess == "p") {
+                alert("You Won");
+                var newwins = ++wins;
+                userText2.textContent = newwins;
+            }
+            if (userGuess == "s" && computerGuess == "s") {
+                alert("You Tied");
+                var newties = ++ties;
+                userText.textContent = newties;
+            }
+        };
+    </script>
+
+</body>
+
+</html>
